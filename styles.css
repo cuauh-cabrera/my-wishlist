@@ -61,12 +61,13 @@ header>h1 {
     background-color: rgb(175, 174, 252);
     margin-top: 1rem;
     width: 95%;
-    height: 80vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
+    padding: 1rem;
 }
 
 .input-container>label {
