@@ -28,7 +28,6 @@ ol a {
 
 /*HEADER*/
 header {
-    border: dotted red 2px;
     background-color: rgb(65, 84, 208);
     width: 100%;
     height: 10vh;
@@ -39,7 +38,6 @@ header {
 }
 
 header > h1 {
-    border: solid blue 1px;
     width: 90%;
     text-align: center;
     color: rgb(251, 250, 250);
@@ -48,7 +46,7 @@ header > h1 {
 
 /*CONTAINER*/
 .container {
-    border: dotted blue 2px;
+    background-color: rgb(241, 238, 238);
     margin-top: 0;
     width: 100%;
     height: 85vh;
@@ -59,7 +57,8 @@ header > h1 {
 }
 
 .input-container {
-    border: solid green 1px;
+    border-radius: 1.2rem;
+    background-color: rgb(175, 174, 252);
     margin-top: 1rem;
     width: 95%;
     height: 80vh;
@@ -71,36 +70,38 @@ header > h1 {
 }
 
 .input-container > label {
-    border: solid orange 1px;
     width: 100%;
     margin-top: 1rem;
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
+    color: rgb(77, 76, 76);
 }
 
 .input-container > input {
+    border-radius: 0.5rem;
+    border-width: 0;
     width: 95%;
     height: 4vh;
     margin-top: 0.5rem;
 }
 
 .input-container > ul {
-    border: solid yellowgreen 1px;
     width: 100%;
     height: auto;
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    gap: 2rem;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .input-container > ul >li {
-    border: solid red 1px;
-    width: 100%;
-    height: 5vh;
+    border-radius: 0.75rem;
+    background-color: rgb(233, 226, 226);
+    width: 95%;
+    height: 7vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -108,10 +109,14 @@ header > h1 {
 }
 
 .input-container > ul > li > span {
-    border: solid blueviolet 1px;
     width: 75%;
     height: fit-content;
+    text-transform: uppercase;
     text-align:start;
+    font-size: 1.1rem;
+    color: rgb(65, 69, 88);
+    font-weight: 600;
+    padding-left: 0.5rem;
 }
 
 .btn {
@@ -121,4 +126,38 @@ header > h1 {
     height: 5vh;
     padding: 0.5rem;
     color: rgb(255, 255, 255);
+}
+
+.btn-delete {
+    border: solid 1px transparent;
+    background-color: rgb(233, 136, 8);
+    border-radius: 0.5rem;
+    height: 4vh;
+    padding: 0.22rem;
+    margin-right: 0.25rem;
+    color: rgb(255, 255, 255);
+    font-size: 0.75rem;
+}
+
+/*FOOTER*/
+footer {
+    background-color: rgb(241, 238, 238);
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>p {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    color: rgb(77, 76, 76);
+}
+
+footer>p>a:visited {
+    color: rgb(77, 76, 76);
+    text-decoration:none;
 }

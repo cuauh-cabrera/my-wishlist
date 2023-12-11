@@ -14,6 +14,7 @@ addItem.addEventListener('click', () => {
         liElement.append(liContent);
         const deleteItem = document.createElement('button');
         deleteItem.textContent = 'Remove Item';
+        deleteItem.classList.toggle('btn-delete')
         liElement.append(deleteItem);
         itemList.append(liElement);
         // Remove item from the list
