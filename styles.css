@@ -37,7 +37,7 @@ header {
     align-items: center;
 }
 
-header > h1 {
+header>h1 {
     width: 90%;
     text-align: center;
     color: rgb(251, 250, 250);
@@ -66,19 +66,18 @@ header > h1 {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    gap:0.5rem;
+    gap: 0.5rem;
 }
 
-.input-container > label {
+.input-container>label {
     width: 100%;
-    margin-top: 1rem;
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
     color: rgb(77, 76, 76);
 }
 
-.input-container > input {
+.input-container>input {
     border-radius: 0.5rem;
     border-width: 0;
     width: 95%;
@@ -86,7 +85,7 @@ header > h1 {
     margin-top: 0.5rem;
 }
 
-.input-container > ul {
+ul {
     width: 100%;
     height: auto;
     margin-top: 1rem;
@@ -97,9 +96,9 @@ header > h1 {
     gap: 0.5rem;
 }
 
-.input-container > ul >li {
+ul>li {
     border-radius: 0.75rem;
-    background-color: rgb(233, 226, 226);
+    background-color: rgb(102, 131, 227);
     width: 95%;
     height: 7vh;
     display: flex;
@@ -108,11 +107,11 @@ header > h1 {
     align-items: center;
 }
 
-.input-container > ul > li > span {
+ul>li>span {
     width: 75%;
     height: fit-content;
     text-transform: uppercase;
-    text-align:start;
+    text-align: start;
     font-size: 1.1rem;
     color: rgb(65, 69, 88);
     font-weight: 600;
@@ -159,5 +158,85 @@ footer>p {
 
 footer>p>a:visited {
     color: rgb(77, 76, 76);
-    text-decoration:none;
+    text-decoration: none;
+}
+
+/*1024px*/
+@media (min-width: 1024px) {
+    header {
+        top: 0;
+    }
+
+    .container {
+        background-color: rgb(241, 238, 238);
+        margin-top: 0;
+        height: 85vh;
+    }
+
+    .input-container {
+        border-radius: 0.5rem;
+        width: 95%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0.5rem;
+    }
+
+    .input-container>label {
+        width: 20%;
+        text-align: start;
+    }
+
+
+    .input-container>input {
+        border-radius: 0.5rem;
+        border-width: 0;
+        width: 50%;
+        height: 5vh;
+        margin: 0
+    }
+
+    ul {
+        width: 90%;
+        height: auto;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    ul>li {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    ul>li>span {
+        font-size: 1.5rem;
+        color: whitesmoke;
+    }
+
+    .btn {
+        height: 5.5vh;
+    }
+
+    .btn:hover {
+        background-color: rgb(42, 175, 242);
+        border: solid white 1px;
+    }
+
+    .btn-delete {
+        border-radius: 0.5rem;
+        height: 5vh;
+        font-size: 0.85rem;
+    }
+
+    .btn-delete:hover {
+        background-color: red;
+        border: solid rgb(233, 136, 8) 1px;
+    }
 }
